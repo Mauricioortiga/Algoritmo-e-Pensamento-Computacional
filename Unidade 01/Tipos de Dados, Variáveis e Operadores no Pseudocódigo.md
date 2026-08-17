@@ -135,6 +135,7 @@ Disjunção OU
 Negação NÃO
 
 se (media >= 7) E (frequencia >= 75) então
+  
   escreva ("Aprovado")
 
 ---
@@ -142,17 +143,27 @@ se (media >= 7) E (frequencia >= 75) então
 🔨 **Situação-Problema:**
 
 algoritmo "VerificaAprovacao"
+
 var 
+  
   real nota1, nota2, media
+
 inicio
+  
   leia (nota1)
+  
   leia (nota2)
+ 
   media <- (nota1 + nota2) /2
 
   se media >= 7 então
+    
     escreva ("Aprovado")
+  
   senao
+    
     escreva ("Reprovado")
+  
   fimalgoritmo
 
 
