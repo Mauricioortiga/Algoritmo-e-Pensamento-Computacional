@@ -32,7 +32,7 @@ Para isso, ele deve:
 
 **Inteiro:**
 
-Numeros sem casas decimais.
+Números sem casas decimais.
 
 **Real:** 
 
