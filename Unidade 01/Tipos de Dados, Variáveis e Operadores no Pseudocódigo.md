@@ -1,14 +1,14 @@
 🔨 **Neste conteúdo, iremos:**
 
-💭 Identificar os tipos de dados mais comuns
+• Identificar os tipos de dados mais comuns
 
-💭 Declarar e utilizar variáveis no pseudocódigo
+• Declarar e utilizar variáveis no pseudocódigo
 
-💭 Criar entradas e saídas com clareza
+• Criar entradas e saídas com clareza
 
-💭 Utilizar operadores aritméticos, relacionais e lógicos
+• Utilizar operadores aritméticos, relacionais e lógicos
 
-💭 Aplicar esses conceitos para resolver uma situação-problema simples
+• Aplicar esses conceitos para resolver uma situação-problema simples
 
 ---
 
@@ -18,11 +18,11 @@
 
 Para isso, ele deve:
 
-🔧 Receber duas notas.
+• Receber duas notas.
 
-🔧 Calcular a média.
+• Calcular a média.
 
-🔧 Mostrar se o aluno está aprovado ou reprovado.
+• Mostrar se o aluno está aprovado ou reprovado.
 
 ⚡**Como iremos estruturar esse raciocínio em pseudocódigo?**
 
@@ -30,21 +30,35 @@ Para isso, ele deve:
 
 🔨 **Identifique os tipos de dados:**
 
-**Inteiro:** Numeros sem casas decimais.
+**Inteiro:**
 
-**Real:** Números com casas decimais.
+Numeros sem casas decimais.
 
-**Caractere:** Letras ou símbolos (Ex: 'A', '$')
+**Real:** 
 
-**Lógico:** Verdadeiro ou falso (booleano)
+Números com casas decimais.
 
-**Literal:** Sequência de caracteres (ex: "Olá Mundo")
+**Caractere:** 
+
+Letras ou símbolos (Ex: 'A', '$')
+
+**Lógico:** 
+
+Verdadeiro ou falso (booleano)
+
+**Literal:** 
+
+**Sequência de caracteres:**
+
+(ex: "Olá Mundo")
 
 ---
 
 🔨 **Declare uma variável:**
 
-**Variáveis:** São espaços de memória com nome. Devem ser declaradas antes do uso.
+**Variáveis:** 
+
+São espaços de memória com nome. Devem ser declaradas antes do uso.
 
 Exemplo: 
 
@@ -54,19 +68,23 @@ real media
 
 ---
 
-**Nome claro**= código **mais legível!**
+• **Nome claro**= código **mais legível!**
 
-**Não use nomes que sejam palavras reservadas do código!**
+• **Não use nomes que sejam palavras reservadas do código!**
 
 ---
 
 🔨 **Com a variável declarada e o tipo definido, definimos a entrada e saída:**
 
-**Entrada:** Permite ler dados do usuário
+**Entrada:** 
+
+Permite ler dados do usuário
 
 -> leia(nota1)
 
-**Saída:** Exibe mensagens ou resultados
+**Saída:** 
+
+Exibe mensagens ou resultados
 
 -> escreva("Sua média é: ", media)
 
@@ -88,7 +106,7 @@ Exemplo:
 
 media <- (nota1 + nota2) /2
 
-A seta virada para media está recebendo o resultado.
+• **A seta virada para media está recebendo o resultado.**
 
 ---
 
