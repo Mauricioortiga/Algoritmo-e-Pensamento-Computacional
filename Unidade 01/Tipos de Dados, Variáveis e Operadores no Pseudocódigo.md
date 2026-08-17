@@ -40,7 +40,9 @@ Números com casas decimais.
 
 **Caractere:** 
 
-Letras ou símbolos (Ex: 'A', '$')
+Letras ou símbolos 
+
+'A', '$'
 
 **Lógico:** 
 
@@ -50,7 +52,7 @@ Verdadeiro ou falso (booleano)
 
 **Sequência de caracteres:**
 
-(ex: "Olá Mundo")
+"Olá Mundo"
 
 ---
 
@@ -59,8 +61,6 @@ Verdadeiro ou falso (booleano)
 **Variáveis:** 
 
 São espaços de memória com nome. Devem ser declaradas antes do uso.
-
-Exemplo: 
 
 real nota1, nota2
 
@@ -133,8 +133,6 @@ Conjunção E
 Disjunção OU
 
 Negação NÃO
-
-Exemplo:
 
 se (media >= 7) E (frequencia >= 75) então
   escreva ("Aprovado")
