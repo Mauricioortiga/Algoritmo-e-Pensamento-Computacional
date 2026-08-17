@@ -1,48 +1,50 @@
-Identificar os tipos de dados mais comuns
+🔨 **Neste conteúdo, iremos:**
 
-Declarar e utilizar variáveis no pseudocódigo
+💭 Identificar os tipos de dados mais comuns
 
-Criar entradas e saídas com clareza
+💭 Declarar e utilizar variáveis no pseudocódigo
 
-Utilizar operadores aritméticos, relacionais e lógicos
+💭 Criar entradas e saídas com clareza
 
-Aplicar esses conceitos para resolver uma situação-problema simples
+💭 Utilizar operadores aritméticos, relacionais e lógicos
+
+💭 Aplicar esses conceitos para resolver uma situação-problema simples
 
 ---
 
-Situação-Problema
+🔨 **Situação-Problema:**
 
-Um sistema precisa verificar se um aluno foi aprovado.
+📜 **Um sistema precisa verificar se um aluno foi aprovado.**
 
 Para isso, ele deve:
 
-1. Receber duas notas
+🔧 Receber duas notas.
 
-2. Calcular a média
+🔧 Calcular a média.
 
-3. Mostrar se o aluno está aprovado ou reprovado
+🔧 Mostrar se o aluno está aprovado ou reprovado.
 
-**Como iremos estruturar esse raciocínio em pseudocódigo?**
-
----
-
-Identifique os tipos de dados:
-
-Inteiro: Numeros sem casas decimais.
-
-Real: Números com casas decimais.
-
-Caractere: Letras ou símbolos (Ex: 'A', '$')
-
-Lógico: Verdadeiro ou falso (booleano)
-
-Literal: Sequência de caracteres (ex: "Olá Mundo")
+⚡**Como iremos estruturar esse raciocínio em pseudocódigo?**
 
 ---
 
-Declare uma variável:
+🔨 **Identifique os tipos de dados:**
 
-Variáveis: São espaços de memória com nome. Devem ser declaradas antes do uso.
+**Inteiro:** Numeros sem casas decimais.
+
+**Real:** Números com casas decimais.
+
+**Caractere:** Letras ou símbolos (Ex: 'A', '$')
+
+**Lógico:** Verdadeiro ou falso (booleano)
+
+**Literal:** Sequência de caracteres (ex: "Olá Mundo")
+
+---
+
+🔨 **Declare uma variável:**
+
+**Variáveis:** São espaços de memória com nome. Devem ser declaradas antes do uso.
 
 Exemplo: 
 
@@ -58,21 +60,21 @@ real media
 
 ---
 
-Com a variável declarada e o tipo definido:
+🔨 **Com a variável declarada e o tipo definido, definimos a entrada e saída:**
 
-Entrada: Permite ler dados do usuário
+**Entrada:** Permite ler dados do usuário
 
 -> leia(nota1)
 
-Saída: Exibe mensagens ou resultados
+**Saída:** Exibe mensagens ou resultados
 
 -> escreva("Sua média é: ", media)
 
 ---
 
-Com a entrada e a saída definida, descrevemos os valores:
+🔨**Com a entrada e a saída definida, descrevemos os valores:**
 
-Operadores aritméticos:
+**Operadores aritméticos:**
 
 Soma +
 
@@ -90,7 +92,7 @@ A seta virada para media está recebendo o resultado.
 
 ---
 
-Operadores relacionais:
+🔨 **Operadores relacionais:**
 
 Igual =
 
@@ -106,7 +108,7 @@ Maior ou igual >=
 
 ---
 
-Operadores lógicos:
+🔨 **Operadores lógicos:**
 
 Conjunção E
 
@@ -121,7 +123,7 @@ se (media >= 7) E (frequencia >= 75) então
 
 ---
 
-Situação-Problema
+🔨 **Situação-Problema:**
 
 algoritmo "VerificaAprovacao"
 var 
