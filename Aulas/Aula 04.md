@@ -90,3 +90,5 @@ int main()
 }
 
 **O % se torna um especificador da variável.**
+
+|| significa OU
