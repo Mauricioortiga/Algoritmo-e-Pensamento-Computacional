@@ -21,15 +21,21 @@ Segundo: Selecione o nome da variável.
 //Entrada do salário
 
   printf("Informe o seu salário: ");
+  
   scanf("%f", &salario);
+  
   printf("Informe o valor da prestação: ");
+  
   scanf("%f",&prestacao);
 
 //Fizemos a entrada, criamos agora o processamento.
  
   float LimiteParcela = (salario * (0,20);
+  
 if (prestacao>LimiteParcela)
+
   printf("Empréstimo não autorizado!!!");
+  
   else printf("Empréstimo autorizado!!!");
 
   return 0;
@@ -51,28 +57,34 @@ int main()
 // Declare as variáveis:
  
   float altura, pesoIdeal;
+  
   char sexo;
 
 //Entrada de dados:
 
   printf("Sistema de Cálculo de Peso Ideal \n");
+  
   printf ("Informe a sua altura: ");
+  
   scanf("%f", &altura);
+  
   printf("Informe o sexo: ");
+  
   scanf(" %c",&sexo);
 
   //Cálculo do peso Ideal
+  
   if (sexo =='M')
-    PesoIdeal = (72.7 * altura) - 58;
+  
+  PesoIdeal = (72.7 * altura) - 58;
 
   else if (sexo =='F')
-    PesoIdeal = (62,1 * altura) - 44,7;
+  
+  PesoIdeal = (62,1 * altura) - 44,7;
 
   //Apresentamos o resultado:
 
   printf("O peso ideal é %.2f", PesoIdeal);
-
-  
 
   return 0;
 }
