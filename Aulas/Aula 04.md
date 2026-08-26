@@ -76,3 +76,5 @@ int main()
 
   return 0;
 }
+
+**O % se torna um especificador da variável.**
