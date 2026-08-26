@@ -74,11 +74,11 @@ int main()
 
   //Cálculo do peso Ideal
   
-  if (sexo =='M')
+  if (sexo =='M') || (sexo =='m')
   
   PesoIdeal = (72.7 * altura) - 58;
 
-  else if (sexo =='F')
+  else if (sexo =='F') || (sexo =='f');
   
   PesoIdeal = (62,1 * altura) - 44,7;
 
@@ -91,4 +91,16 @@ int main()
 
 **O % se torna um especificador da variável.**
 
-|| significa OU
+|| significa OU = Realiza uma comparação
+
+Os blocos { Só se fazem quando há mais de uma linha.
+
+Exemplo: 
+
+  else if (sexo =='F') || (sexo =='f');
+  
+{ PesoIdeal = (62,1 * altura) - 44,7;
+
+  printf ("O peso ideal é %.2f, PesoIdeal);
+
+}
