@@ -34,25 +34,31 @@ int main()
 
 {
 
-float nota1, nota2, media, cargahoraria;
+float nota1, nota2, media, cargahoraria, faltas, limitefaltas, verificacao
 
 printf ("Informe a primeira nota adquirida: ");
-
 scanf ("%f", &nota1);
 
 printf ("Informe a segunda nota adquirida: ");
-
 scanf ("%f", &nota2);
 
 printf ("Informe a carga horária do seu curso: ");
-
 scanf ("%f", &cargahoraria);
 
-if (cargahoraria )
+printf ("Informe o número de faltas: ");
+scanf ("%d", &faltas);
 
-media = (nota1+nota2/2);
-
+media = (nota1+nota2) /2;
 printf ("A média será de %.2f", media);
+
+limitefaltas = cargahoraria * 0.15;
+
+verificacao = cargahoraria / faltas;
+
+if (media >=7.0 && verificacao <= limitefaltas) {
+printf ("Situação do curso: APROVADO."); 
+    
+}else printf ("Situação do curso: REPROVADO.");
 
 return 0;
 
@@ -60,4 +66,31 @@ return 0;
 
 **CORREÇÃO:**
 
-3) Construa um programação em C que peça o Nome, Endereço, Sexo, Cidade, Estado, Idade dos funcionários. Além disto, dado o Salário Bruto do funcionário, calcule o seu Salário Líquido. Considere que os descontos podem ser o Vale Transporte (2%), Vale Alimentação (5%) e Plano de Saúde (10%).
+#include <stdio.h>
+
+int main ()
+{
+  float media, cargaHoraria, faltas, percentualFaltas;
+  printf ("Sistema Acadêmico\n");
+
+  printf ("Informe a média do aluno: ");
+  scanf ("%f, &media);
+
+  printf ("Informe a carga horária (número de aulas): ");
+  scanf ("%%f" ,&cargaHoraria);
+
+  printf ("Informe o número de faltas: ");
+  scanf ("%f", &faltas);  
+
+  percentualFaltas = (faltas / cargaHoraria) * 100;
+  printf ("\n --- Resultado --- \n");
+  printf ("Média: %f", media);
+  printf ("Percentual de faltas: %.2f",percentualFaltas);
+
+  if (media) >= 7.0 && percentualFaltas <= 15.0)
+    printf ("Situação: APROVADO \n);
+  else printf ("Situação: Reprovado \n);
+  
+  return 0;
+
+}
