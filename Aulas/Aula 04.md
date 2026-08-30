@@ -94,3 +94,75 @@ int main ()
   return 0;
 
 }
+
+3. Construa um programação em C que peça o Nome, Endereço, Sexo, Cidade, Estado, Idade dos funcionários. Além disto, dado o Salário Bruto do funcionário, calcule o seu Salário Líquido. Considere que os descontos podem ser o Vale Transporte (2%), Vale Alimentação (5%) e Plano de Saúde (10%).
+
+#include <stdio.h>
+
+int main() 
+{
+    // Declaração das variáveis
+    char nome[50];
+    char endereco[50];
+    char sexo;
+    char cidade[50];
+    char estado[50];
+    int idade;
+
+    float salarioBruto;
+    float valeTransporte;
+    float valeAlimentacao;
+    float planoSaude;
+    float totalDescontos;
+    float salarioLiquido;
+
+    printf("=== CADASTRO DE FUNCIONARIO ===\n");
+
+    // Leitura dos dados utilizando & em todas as variaveis
+    printf("Informe o primeiro nome: ");
+    scanf("%s", &nome);
+
+    printf("Informe o endereco (uma palavra ou sem espacos): ");
+    scanf("%s", &endereco);
+
+    printf("Informe a cidade: ");
+    scanf("%s", &cidade);
+
+    printf("Informe o estado (sigla EX: DF): ");
+    scanf("%s", &estado);
+
+    printf("Informe o sexo (M/F): ");
+    scanf(" %c", &sexo);
+
+    printf("Informe a idade: ");
+    scanf("%d", &idade);
+
+    printf("Informe o salario bruto: ");
+    scanf("%f", &salarioBruto);
+
+    // Calculo dos descontos passo a passo
+    valeTransporte = salarioBruto * 0.02;
+    valeAlimentacao = salarioBruto * 0.05;
+    planoSaude = salarioBruto * 0.10;
+
+    totalDescontos = valeTransporte + valeAlimentacao + planoSaude;
+    salarioLiquido = salarioBruto - totalDescontos;
+
+    // Exibicao dos resultados
+    printf("\n--- RESULTADO ---\n");
+    printf("Nome: %s\n", nome);
+    printf("Endereco: %s\n", endereco);
+    printf("Cidade: %s\n", cidade);
+    printf("Estado: %s\n", estado);
+    printf("Sexo: %c\n", sexo);
+    printf("Idade: %d anos\n", idade);
+
+    printf("\nSalario Bruto: R$ %.2f\n", salarioBruto);
+    printf("Desconto Vale Transporte: R$ %.2f\n", valeTransporte);
+    printf("Desconto Vale Alimentacao: R$ %.2f\n", valeAlimentacao);
+    printf("Desconto Plano de Saude: R$ %.2f\n", planoSaude);
+    printf("Total de Descontos: R$ %.2f\n", totalDescontos);
+    printf("Salario Liquido: R$ %.2f\n", salarioLiquido);
+
+    return 0;
+}
