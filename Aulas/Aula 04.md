@@ -99,72 +99,74 @@ int main ()
 
 **3. Construa um programação em C que peça o Nome, Endereço, Sexo, Cidade, Estado, Idade dos funcionários. Além disto, dado o Salário Bruto do funcionário, calcule o seu Salário Líquido. Considere que os descontos podem ser o Vale Transporte (2%), Vale Alimentação (5%) e Plano de Saúde (10%).**
 
+Todo algoritmo é processado em entrada, processamento e saída.
+
+**3. Construa uma programação em C que peça o nome, endereço, sexo, cidade, estado, idade dos funcionários.
+Além disto, dado o Salário Bruto do funcionário, calcule o seu Salário Líquido. Considere que os descontos podem ser o Vale Transporte(2%), Vale Alimentação(5%) e Plano de Saúde(10%).**
+
 #include <stdio.h>
 
-int main() 
+int main ()
 {
-    // Declaração das variáveis
-    char nome[50];
-    char endereco[50];
-    char sexo;
-    char cidade[50];
-    char estado[50];
-    int idade;
 
-    float salarioBruto;
-    float valeTransporte;
-    float valeAlimentacao;
-    float planoSaude;
-    float totalDescontos;
-    float salarioLiquido;
+//Declaração das variáveis: Char é o tipo caractere, nome é a variável e 100 é o limite de caracteres.
+ 
+  char nome[100];
+  char endereco[150];
+  char sexo;
+  char cidade[50];
+  char estado[50];
+  int idade;
+  float salarioBruto, salarioLiquido, valeTransporte, valeAlimentacao, planodeSaude;
 
-    printf("=== CADASTRO DE FUNCIONARIO ===\n");
+  printf("**** Sistema de Cálculo de Salário ****")
+  printf("Nome......: ");
+  
+  //% declara o tipo de variável, ^ é uma estrutura de array, sendo utilizado para uma estrutura de dados onde temos vários elementos, sendo definido por colchete [50] na declaração.
 
-    // Leitura dos dados utilizando & em todas as variaveis
-    printf("Informe o primeiro nome: ");
-    scanf("%s", &nome);
 
-    printf("Informe o endereco (uma palavra ou sem espacos): ");
-    scanf("%s", &endereco);
+  //PARA O CHAR, É IMPORTANTE HAVER O ESPAÇO LOGO APOS "", SENÃO IRÁ DAR ERRO!!!
+  
+  //CAPTURA DAS INFORMAÇÕES:
+  
+  printf("Nome......: ");
+  scanf(" %[^\n],nome);
+  
+  printf("Endereço......: ");
+  scanf(" %[^\n]",endereco);
+  
+  printf("Cidade......: ");
+  scanf(" %[^\n]",cidade);
+  
+  printf("estado......: ");
+  scanf(" %[^\n]",estado);
+  
+  printf("Sexo......: ");
+  scanf("%c",&sexo);
+  
+  printf("Idade......: ");
+  scanf("%d",&idade);
+  
+  printf("Salário bruto......: ");
+  scanf("%f",f&salarioBruto);
 
-    printf("Informe a cidade: ");
-    scanf("%s", &cidade);
+  // Processamento:
 
-    printf("Informe o estado (sigla EX: DF): ");
-    scanf("%s", &estado);
+  valeTransporte = salarioBruto * 0.02;
+  valeAlimentacao = salarioBruto * 0.05;
+  planodeSaude = salarioBruto * 0.10;
+  salarioLiquido = salarioBruto - valeTransporte - valeAlimentacao - planodeSaude;
 
-    printf("Informe o sexo (M/F): ");
-    scanf(" %c", &sexo);
-
-    printf("Informe a idade: ");
-    scanf("%d", &idade);
-
-    printf("Informe o salario bruto: ");
-    scanf("%f", &salarioBruto);
-
-    // Calculo dos descontos passo a passo
-    valeTransporte = salarioBruto * 0.02;
-    valeAlimentacao = salarioBruto * 0.05;
-    planoSaude = salarioBruto * 0.10;
-
-    totalDescontos = valeTransporte + valeAlimentacao + planoSaude;
-    salarioLiquido = salarioBruto - totalDescontos;
-
-    // Exibicao dos resultados
-    printf("\n--- RESULTADO ---\n");
-    printf("Nome: %s\n", nome);
-    printf("Endereco: %s\n", endereco);
-    printf("Cidade: %s\n", cidade);
-    printf("Estado: %s\n", estado);
-    printf("Sexo: %c\n", sexo);
-    printf("Idade: %d anos\n", idade);
-
-    printf("\nSalario Bruto: R$ %.2f\n", salarioBruto);
-    printf("Desconto Vale Transporte: R$ %.2f\n", valeTransporte);
-    printf("Desconto Vale Alimentacao: R$ %.2f\n", valeAlimentacao);
-    printf("Desconto Plano de Saude: R$ %.2f\n", planoSaude);
-    printf("Total de Descontos: R$ %.2f\n", totalDescontos);
-    printf("Salario Liquido: R$ %.2f\n", salarioLiquido);
-
-    return 0;
-}
+  // Imprimindo o resultado:
+  
+  printf("\n**** Salário Líquido ......: ");
+  printf("\nNome...: %s\n", nome);
+  printf("\nSalário bruto...: R$ %.2f", salarioBruto);
+  printf("\n(-) Vale Transporte...: R$ %.2f", valeTransporte);
+  printf("\n(-) Vale Alimentação...: R$ %.2f", valeAlimentacao);
+  printf("\n(-) Plano de Saúde...: R$ %.2f", planodeSaude);
+  printf("\n(-) Salário Líquido...: R$ %.2f", salarioLiquido);
+  
+  return 0;
+  
+  
