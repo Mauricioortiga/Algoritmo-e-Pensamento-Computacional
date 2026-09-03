@@ -13,7 +13,8 @@ float comprimento;
 float metroquadrado;
 float cobertura;
 int latas;
-int valor;
+int valorTotal;
+
 
 printf ("Informe a largura da parede em Metros: ");
 scanf ("%f", &largura);
@@ -26,7 +27,7 @@ cobertura = metroquadrado / 3;
 
 latas = cobertura / 18;
 
-valor = latas * 80;
+valorTotal = latas * 80;
 
 printf ("O metro quadrado é %.1f", metroquadrado);
 printf (" m²");
@@ -37,7 +38,7 @@ printf(" litros de tinta para cobrir a área.");
 printf ("\n Foi utilizado %d", latas);
 printf (" latas de tinta");
 
-printf ("\n O valor ficou em R$ %d", valor);
+printf ("\n O valor ficou em R$ %d", valorTotal);
 printf (" reais.");
 
 return 0;
