@@ -1,71 +1,45 @@
-Todo algoritmo é processado em entrada, processamento e saída.
+1) Faça um programa em C para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada.
 
-**3. Construa uma programação em C que peça o nome, endereço, sexo, cidade, estado, idade dos funcionários.
-Além disto, dado o Salário Bruto do funcionário, calcule o seu Salário Líquido. Considere que os descontos podem ser o Vale Transporte(2%), Vale Alimentação(5%) e Plano de Saúde(10%).**
+Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00.
+
+Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.
 
 #include <stdio.h>
 
-int main ()
+int main()
 {
+float largura;
+float comprimento;
+float metroquadrado;
+float cobertura;
+int latas;
 
-//Declaração das variáveis: Char é o tipo caractere, nome é a variável e 100 é o limite de caracteres.
- 
-  char nome[100];
-  char endereco[150];
-  char sexo;
-  char cidade[50];
-  char estado[50];
-  int idade;
-  float salarioBruto, salarioLiquido, valeTransporte, valeAlimentacao, planodeSaude;
+printf ("Informe a largura da parede em Metros: ");
+scanf ("%f", &largura);
+printf ("Informe o comprimento da parede em Metros: ");
+scanf ("%f", &comprimento);
 
-  printf("**** Sistema de Cálculo de Salário ****")
-  printf("Nome......: ");
-  
-  //% declara o tipo de variável, ^ é uma estrutura de array, sendo utilizado para uma estrutura de dados onde temos vários elementos, sendo definido por colchete [50] na declaração.
+metroquadrado = comprimento * largura;
+
+cobertura = metroquadrado / 3;
+
+latas = cobertura / 18;
+
+printf ("O metro quadrado é %.1f", metroquadrado);
+printf (" m²");
+printf ("\n Será utilizado %.2f", cobertura); 
+
+printf(" litros de tinta para cobrir a área.");
+
+printf ("\n Foi utilizado %d", latas);
+printf (" latas de tinta");
+
+return 0;
+    
+}
+
+2) Um posto está vendendo combustíveis com a seguinte tabela de descontos: Álcool: até 20 litros, desconto de 3% por litro acima de 20 litros, desconto de 5% por litro Gasolina: até 20 litros, desconto de 4% por litro acima de 20 litros, desconto de 6% por litro.
 
 
-  //PARA O CHAR, É IMPORTANTE HAVER O ESPAÇO LOGO APOS "", SENÃO IRÁ DAR ERRO!!!
-  
-  //CAPTURA DAS INFORMAÇÕES:
-  
-  printf("Nome......: ");
-  scanf(" %[^\n],nome);
-  
-  printf("Endereço......: ");
-  scanf(" %[^\n]",endereco);
-  
-  printf("Cidade......: ");
-  scanf(" %[^\n]",cidade);
-  
-  printf("estado......: ");
-  scanf(" %[^\n]",estado);
-  
-  printf("Sexo......: ");
-  scanf("%c",&sexo);
-  
-  printf("Idade......: ");
-  scanf("%d",&idade);
-  
-  printf("Salário bruto......: ");
-  scanf("%f",f&salarioBruto);
 
-  // Processamento:
-
-  valeTransporte = salarioBruto * 0.02;
-  valeAlimentacao = salarioBruto * 0.05;
-  planodeSaude = salarioBruto * 0.10;
-  salarioLiquido = salarioBruto - valeTransporte - valeAlimentacao - planodeSaude;
-
-  // Imprimindo o resultado:
-  
-  printf("\n**** Salário Líquido ......: ");
-  printf("\nNome...: %s\n", nome);
-  printf("\nSalário bruto...: R$ %.2f", salarioBruto);
-  printf("\n(-) Vale Transporte...: R$ %.2f", valeTransporte);
-  printf("\n(-) Vale Alimentação...: R$ %.2f", valeAlimentacao);
-  printf("\n(-) Plano de Saúde...: R$ %.2f", planodeSaude);
-  printf("\n(-) Salário Líquido...: R$ %.2f", salarioLiquido);
-  
-  return 0;
-  
-  
+3) Escreva um programa C que leia o número de litros vendidos, o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 2,50 o preço do litro do álcool é R$ 1,90.
