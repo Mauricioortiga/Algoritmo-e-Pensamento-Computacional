@@ -129,3 +129,14 @@ segundos.
 
     return 0;
 }
+
+CORREÇÃO EXERCÍCIO 02:
+
+Alcool: Até 20 litros, desconto de 3% por litro e acima de 20 litros, desconto de 5% por litro.
+
+(Litro) x (VALOR) X (DESCONTO)
+
+(DESCONTO) - (VALOR) = Valor final
+Gasolina: Até 20 litros, desconto de 4% por litro e acima de 20 litros, desconto de 6% por litro.
+
+<img width="605" height="573" alt="image" src="https://github.com/user-attachments/assets/bde2d0ad-cfaa-4f23-87c6-94e57f2a64f2" />
