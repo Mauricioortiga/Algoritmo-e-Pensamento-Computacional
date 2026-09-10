@@ -149,3 +149,5 @@ Gasolina: Até 20 litros, desconto de 4% por litro e acima de 20 litros, descont
 
 - segundos;
 
+<img width="435" height="376" alt="image" src="https://github.com/user-attachments/assets/37a5dfe7-47af-4119-9827-3f08587864a1" />
+
