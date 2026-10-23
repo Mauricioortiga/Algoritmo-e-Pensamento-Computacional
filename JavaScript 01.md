@@ -167,11 +167,17 @@ or ||
 
 not !
 
-Ex 10:
+Ex 11:
 if (){
 
 }else{
 
 }
 
+let idade = Number(prompt("Digite sua idade: "));
 
+if (idade >= 18){
+  console.log("Sua idade é " + idade + " anos. Você é maior de idade");
+}else{
+  console.log)"Sua idade é " + idade + " anos. Você é menor de idade");
+}
