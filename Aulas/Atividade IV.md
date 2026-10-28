@@ -33,6 +33,7 @@ Requisitos técnicos:
 Critérios avaliados: vetores, acumuladores, comparação de valores, funções e percursos em ordem inversa.
 
 **RESPOSTA EXERCÍCIO 01:**
+
 #include <stdio.h>
 
 float calcularTotal(float consumo[]) {
